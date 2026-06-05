@@ -1,13 +1,3 @@
-/**
- * Project Name    : sonarqube-example
- * Developer       : Osanda Deshan
- * Version         : 1.0.0
- * Date            : 8/8/2019
- * Time            : 4:28 PM
- * Description     :
- **/
-
-
 public class HelloWorld {
 
     public void sayHello() {
@@ -18,5 +8,15 @@ public class HelloWorld {
         System.out.println("This method is not covered by unit tests");
     }
 
+    public static void main(String[] args) {
+        System.out.println("Application Started");
 
+        while (true) {
+            try {
+                Thread.sleep(10000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
 }
